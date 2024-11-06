@@ -2,14 +2,14 @@ import React from "react";
 
 function Intro() {
   return (
-    <div className="grid grid-cols-2 h-screen items-center px-20">
+    <div className="grid grid-cols-2 h-screen items-center">
       <div className="flex flex-col items-end space-y-7 ">
         <h1 className="text-7xl font-semibold text-gray-600">
           {" "}
           The Best
           <b1 className="text-black"> Marketing </b1>
         </h1>
-        <h1 className="text-4xl font-semibold">
+        <h1 className="text-4xl font-semibold text-gray-600">
           {" "}
           Doesn't feel like Marketing{" "}
         </h1>
