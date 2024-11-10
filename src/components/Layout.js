@@ -28,33 +28,33 @@ function Layout({ children }) {
 
   return (
     <div>
-      {/* content */}
-      <div className="pb-32">{children}</div>
+      {/* {content} */}
+      <div className="pb-44 overflow-x-hidden  "> {children}</div>
 
-      {/* footer */}
-      <div className="fixed bottom-10 left-0 right-0 ">
+      {/* {footer} */}
+      <div className="fixed bottom-10 left-0 right-0">
         <div className="flex w-full justify-center">
           {menuItems.map((item, index) => (
             <div className="flex flex-col justify-end">
               {location.pathname === item.path && (
                 <div className="flex flex-col items-center">
-                  <div className="h-5 w-10 left-0 right-0 bg-primary rounded-t-full"></div>
-                  <div className="h-5 w-20 bg-primary rounded-t-full text-center">
-                    <i className={`${item.icon} text-xl text-black`}></i>
+                  <div className="h-5 w-10 bg-red-200 rounded-t-full "></div>
+                  <div className="h-5 w-20 bg-red-200 rounded-t-full text-center ">
+                    <i className={`${item.icon} text-md`}> </i>
                   </div>
                 </div>
               )}
               <div
-                className={`px-20 py-2 bg-primary ${
+                className={`px-20 bg-red-200 py-2 ${
                   index === 0 && "rounded-l"
                 } ${
                   index === menuItems.length - 1 && "rounded-r"
                 } flex items-center justify-center space-x-2 `}
               >
                 {location.pathname !== item.path && (
-                  <i className={`${item.icon} text-secondary text-xl`}> </i>
+                  <i className={`${item.icon} text-gray-500 text-xl`}></i>
                 )}
-                <Link to={`${item.path}`} className="text-secondary">
+                <Link to={`${item.path}`} className="text-xl">
                   {" "}
                   {item.title}{" "}
                 </Link>
