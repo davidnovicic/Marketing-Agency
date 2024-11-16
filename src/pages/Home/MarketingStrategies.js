@@ -30,11 +30,11 @@ function MarketingStrategies() {
 
   return (
     <div>
-      <h1 className="text-6xl font-semibold text-gray-600 mb-10">
+      <h1 className="text-6xl font-semibold text-gray-600 mb-10 sm:mt-10">
         {" "}
         Want to boost your business growth?{" "}
       </h1>
-      <h1 className="text-7xl font-semibold text-gray-600 mt-10">
+      <h1 className="text-7xl font-semibold text-gray-600 mt-10 sm:text-5xl">
         {" "}
         The <b className="text-gray-600"> SOLUTION </b> is here..
       </h1>
@@ -46,11 +46,11 @@ function MarketingStrategies() {
         <p> Here's what we found, in no particular order: </p>
       </p>
 
-      <div className="grid grid-cols-2 gap-20 mt-14 ">
+      <div className="grid grid-cols-2 gap-20 mt-14 sm:grid-cols-1 ">
         {strategies.map((item) => {
           return (
             <div className="border border-primary bg-primary p-5 flex flex-col space-y-5 rounded transform hover:scale-105 duration-300">
-              <h1 className="text-center -mt-8 bg-white border-secondary border text-xl rounded text-secondary py-2 ">
+              <h1 className="mx-20 sm:mx-5 text-center -mt-8 bg-white border-secondary border text-xl rounded text-secondary py-2 ">
                 {item.title}
               </h1>
               <img src={item.image} alt="" className="h-20 w-20" />

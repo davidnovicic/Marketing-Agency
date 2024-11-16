@@ -29,12 +29,13 @@ function WhatWeDo() {
     },
   ];
   return (
-    <div className="mt-20 z-20">
-      <h1 className="text-secondary text-8xl text-center z-20 font-semibold">
+    <div className="mt-20 z-20 sm:mt-10">
+      <h1 className="text-secondary text-8xl text-center z-20 font-semibold sm:text-5xl">
         What We Do?
       </h1>
       <div className="h-96 w-full bg-third mt-16"></div>
-      <div className="grid grid-cols-4 gap-20 mx-32 -mt-60">
+
+      <div className="grid grid-cols-4 sm:grid-cols-1 gap-20 mx-32 sm:mx-0 -mt-60 sm:w-full sm:px-7">
         {items.map((item) => (
           <div className="p-8 bg-primary border shadow flex flex-col space-y-5 items-center transform hover:scale-105 duration-300">
             <img src={item.icon} className="h-20 w-20" />

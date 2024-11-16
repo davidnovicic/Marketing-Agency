@@ -2,16 +2,16 @@ import React from "react";
 
 function Intro() {
   return (
-    <div className="grid grid-cols-2 h-screen items-center">
-      <div className="flex flex-col items-end space-y-7 ">
-        <h1 className="text-7xl font-semibold text-gray-600">
+    <div className="grid grid-cols-2 sm:grid-cols-1 h-screen items-center sm:mt-20">
+      <div className="flex flex-col space-y-6">
+        <h1 className="text-7xl sm:text-5xl font-semibold text-gray-600">
           The Best
           <b1 className="text-black"> Marketing </b1>
         </h1>
         <h1 className="text-4xl font-semibold text-gray-600">
           Doesn't feel like Marketing
         </h1>
-        <button className="px-8 py-2 bg-red-500 text-white hover:bg-red-400">
+        <button className="px-8 py-3 max-w-max bg-red-500 text-white hover:bg-red-400">
           Let's talk
         </button>
       </div>
